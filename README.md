@@ -2,19 +2,17 @@
 # Basic Employee Onboarding (AD)(RBAC)
 
 ## Problem Statement
-[Provide 3 to 5 sentences describing what was broken at Northstar Medical Group. Mention the MSP mismanagement, lack of structure, manual processes, and HIPAA risks that existed before your project.]
+* The previous MSP in charge of the IT operation at Northstar Medical Group had their entire environement disorganized. Users were being added manually with no proper documentation. Putting the company at risk of HIPPA Compliance
 
 ## Solution Overview
-[Provide 4 to 6 sentences describing what you built and how it solved the problem. Cover the new domain creation, the structural OU design, the security groups, the flat RBAC model, and how user provisioning was secured.]
-
+* To fix the proplem, I built a new domain and a Basic Onboarding System in active directory using RBAC. I created four differents organizational units (OUs), with four respective security groups where I placed each users depending of their role. During the same week, I received a ticket where a user was having access denied on all her shared resources. After investigating, I was able to diagnosed the issue which she was assigned to the wrong OUs and Group. I fixed it by placing her in the right OUs and Groups.   
 ## Video Walkthrough
-[Add your video walkthrough link placeholder here. You will record this tomorrow and update this link so visitors can see a live demonstration of your lab environment.]
+(https://www.loom.com/share/f7365fe60f984b629e93cbc69788344c)
 
 ## Tools Used
 * Windows Server
 * Active Directory Domain Services
 * VirtualBox
-* UTM
 * RBAC
 * GitHub
 
@@ -27,8 +25,13 @@
 
 ## Key Accomplishments
 * Built NMG.com domain from scratch
-* [Add your second key accomplishment here]
-* [Add your third key accomplishment here]
+* Designed department-based OU structure (Finance, HR, IT, Operations)
+* Implemented RBAC with security groups mapped to each department
+* Provisioned 15 user accounts with consistent naming conventions and attribute standards
+* Diagnosed and resolved a multi-cause access issue (wrong OU + missing group membership)
+* Documented full incident resolution with root cause analysis
+
+
 
 
 
